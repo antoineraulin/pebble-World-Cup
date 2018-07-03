@@ -1,8 +1,6 @@
 {
     "targetPlatforms": [
-        "aplite", 
         "basalt", 
-        "chalk", 
         "diorite", 
         "emery"
     ], 
@@ -16,7 +14,7 @@
     "sdkVersion": "3", 
     "appKeys": {}, 
     "longName": "World Cup", 
-    "versionCode": 1, 
+    "versionCode": 1.0.0, 
     "shortName": "World Cup", 
     "watchapp": {
         "watchface": false
