@@ -2001,7 +2001,7 @@ DISCARD
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
-OUTPUT(/root/hello-pebblejs/build/aplite/pebble-app.elf elf32-littlearm)
+OUTPUT(/root/hello-pebblejs/pebble-World-Cup/build/aplite/pebble-app.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x27
@@ -2204,63 +2204,63 @@ OUTPUT(/root/hello-pebblejs/build/aplite/pebble-app.elf elf32-littlearm)
  .debug_ranges  0x00000000000010f8      0x108 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
  .debug_ranges  0x0000000000001200       0xf8 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
 
-.debug_line     0x0000000000000000     0x3952
+.debug_line     0x0000000000000000     0x39fc
  .debug_line    0x0000000000000000       0xa5 src/main.c.42.o
- .debug_line    0x00000000000000a5      0x2b5 src/simply/simply.c.42.o
- .debug_line    0x000000000000035a      0x2b0 src/simply/simply_accel.c.42.o
- .debug_line    0x000000000000060a      0x8f9 src/simply/simply_menu.c.42.o
- .debug_line    0x0000000000000f03      0x4fe src/simply/simply_msg.c.42.o
- .debug_line    0x0000000000001401      0x485 src/simply/simply_res.c.42.o
- .debug_line    0x0000000000001886      0x216 src/simply/simply_splash.c.42.o
- .debug_line    0x0000000000001a9c      0x7a7 src/simply/simply_stage.c.42.o
- .debug_line    0x0000000000002243      0x5b2 src/simply/simply_ui.c.42.o
- .debug_line    0x00000000000027f5       0x1d src/simply/simply_voice.c.42.o
- .debug_line    0x0000000000002812      0x2ee src/simply/simply_wakeup.c.42.o
- .debug_line    0x0000000000002b00      0x583 src/simply/simply_window.c.42.o
- .debug_line    0x0000000000003083      0x351 src/simply/simply_window_stack.c.42.o
- .debug_line    0x00000000000033d4      0x113 aplite/appinfo.auto.c.42.o
- .debug_line    0x00000000000034e7       0xc5 aplite/src/resource_ids.auto.c.42.o
- .debug_line    0x00000000000035ac       0x71 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o)
- .debug_line    0x000000000000361d       0x71 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_line    0x000000000000368e       0x6d /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
- .debug_line    0x00000000000036fb       0xef /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_line    0x00000000000037ea       0xd8 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_line    0x00000000000038c2       0x90 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
+ .debug_line    0x00000000000000a5      0x2c6 src/simply/simply.c.42.o
+ .debug_line    0x000000000000036b      0x2c1 src/simply/simply_accel.c.42.o
+ .debug_line    0x000000000000062c      0x90a src/simply/simply_menu.c.42.o
+ .debug_line    0x0000000000000f36      0x50f src/simply/simply_msg.c.42.o
+ .debug_line    0x0000000000001445      0x496 src/simply/simply_res.c.42.o
+ .debug_line    0x00000000000018db      0x216 src/simply/simply_splash.c.42.o
+ .debug_line    0x0000000000001af1      0x7b8 src/simply/simply_stage.c.42.o
+ .debug_line    0x00000000000022a9      0x5c3 src/simply/simply_ui.c.42.o
+ .debug_line    0x000000000000286c       0x1d src/simply/simply_voice.c.42.o
+ .debug_line    0x0000000000002889      0x2ff src/simply/simply_wakeup.c.42.o
+ .debug_line    0x0000000000002b88      0x594 src/simply/simply_window.c.42.o
+ .debug_line    0x000000000000311c      0x362 src/simply/simply_window_stack.c.42.o
+ .debug_line    0x000000000000347e      0x113 aplite/appinfo.auto.c.42.o
+ .debug_line    0x0000000000003591       0xc5 aplite/src/resource_ids.auto.c.42.o
+ .debug_line    0x0000000000003656       0x71 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x00000000000036c7       0x71 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
+ .debug_line    0x0000000000003738       0x6d /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00000000000037a5       0xef /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
+ .debug_line    0x0000000000003894       0xd8 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
+ .debug_line    0x000000000000396c       0x90 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
 
-.debug_str      0x0000000000000000     0x4f80
- .debug_str     0x0000000000000000      0x181 src/main.c.42.o
-                                        0x1c0 (size before relaxing)
- .debug_str     0x0000000000000181      0x4f6 src/simply/simply.c.42.o
-                                        0x75d (size before relaxing)
- .debug_str     0x0000000000000677      0x6e9 src/simply/simply_accel.c.42.o
-                                        0xa05 (size before relaxing)
- .debug_str     0x0000000000000d60     0x130f src/simply/simply_menu.c.42.o
-                                       0x1dcb (size before relaxing)
- .debug_str     0x000000000000206f      0x826 src/simply/simply_msg.c.42.o
-                                       0x1440 (size before relaxing)
- .debug_str     0x0000000000002895      0x2fd src/simply/simply_res.c.42.o
-                                        0x6c4 (size before relaxing)
- .debug_str     0x0000000000002b92       0xee src/simply/simply_splash.c.42.o
-                                        0x3e7 (size before relaxing)
- .debug_str     0x0000000000002c80      0xeb3 src/simply/simply_stage.c.42.o
-                                       0x1efe (size before relaxing)
- .debug_str     0x0000000000003b33      0x45e src/simply/simply_ui.c.42.o
-                                       0x160f (size before relaxing)
- .debug_str     0x0000000000003f91       0x1d src/simply/simply_voice.c.42.o
-                                         0xe8 (size before relaxing)
- .debug_str     0x0000000000003fae      0x25c src/simply/simply_wakeup.c.42.o
-                                        0x97a (size before relaxing)
- .debug_str     0x000000000000420a      0x7b3 src/simply/simply_window.c.42.o
-                                       0x1559 (size before relaxing)
- .debug_str     0x00000000000049bd      0x19c src/simply/simply_window_stack.c.42.o
-                                        0xb6e (size before relaxing)
- .debug_str     0x0000000000004b59      0x222 aplite/appinfo.auto.c.42.o
-                                        0x309 (size before relaxing)
- .debug_str     0x0000000000004d7b       0x65 aplite/src/resource_ids.auto.c.42.o
-                                        0x119 (size before relaxing)
- .debug_str     0x0000000000004de0       0xda /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
+.debug_str      0x0000000000000000     0x4f91
+ .debug_str     0x0000000000000000      0x192 src/main.c.42.o
+                                        0x1d1 (size before relaxing)
+ .debug_str     0x0000000000000192      0x4f6 src/simply/simply.c.42.o
+                                        0x76e (size before relaxing)
+ .debug_str     0x0000000000000688      0x6e9 src/simply/simply_accel.c.42.o
+                                        0xa16 (size before relaxing)
+ .debug_str     0x0000000000000d71     0x130f src/simply/simply_menu.c.42.o
+                                       0x1ddc (size before relaxing)
+ .debug_str     0x0000000000002080      0x826 src/simply/simply_msg.c.42.o
+                                       0x1451 (size before relaxing)
+ .debug_str     0x00000000000028a6      0x2fd src/simply/simply_res.c.42.o
+                                        0x6d5 (size before relaxing)
+ .debug_str     0x0000000000002ba3       0xee src/simply/simply_splash.c.42.o
+                                        0x3f8 (size before relaxing)
+ .debug_str     0x0000000000002c91      0xeb3 src/simply/simply_stage.c.42.o
+                                       0x1f0f (size before relaxing)
+ .debug_str     0x0000000000003b44      0x45e src/simply/simply_ui.c.42.o
+                                       0x1620 (size before relaxing)
+ .debug_str     0x0000000000003fa2       0x1d src/simply/simply_voice.c.42.o
+                                         0xf9 (size before relaxing)
+ .debug_str     0x0000000000003fbf      0x25c src/simply/simply_wakeup.c.42.o
+                                        0x98b (size before relaxing)
+ .debug_str     0x000000000000421b      0x7b3 src/simply/simply_window.c.42.o
+                                       0x156a (size before relaxing)
+ .debug_str     0x00000000000049ce      0x19c src/simply/simply_window_stack.c.42.o
+                                        0xb7f (size before relaxing)
+ .debug_str     0x0000000000004b6a      0x222 aplite/appinfo.auto.c.42.o
+                                        0x31a (size before relaxing)
+ .debug_str     0x0000000000004d8c       0x65 aplite/src/resource_ids.auto.c.42.o
+                                        0x12a (size before relaxing)
+ .debug_str     0x0000000000004df1       0xda /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
                                         0x10b (size before relaxing)
- .debug_str     0x0000000000004eba       0xc6 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
+ .debug_str     0x0000000000004ecb       0xc6 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
                                         0x1d8 (size before relaxing)
  .debug_str     0x0000000000000000      0x1d9 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
 
@@ -2281,64 +2281,3 @@ OUTPUT(/root/hello-pebblejs/build/aplite/pebble-app.elf elf32-littlearm)
  .debug_frame   0x000000000000118c       0x38 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
  .debug_frame   0x00000000000011c4       0x38 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
  .debug_frame   0x00000000000011fc       0x20 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000003992       0xef /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_line    0x0000000000003a81       0xd8 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_line    0x0000000000003b59       0x90 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-
-.debug_str      0x0000000000000000     0x5427
- .debug_str     0x0000000000000000      0x17b src/main.c.41.o
-                                        0x1c0 (size before relaxing)
- .debug_str     0x000000000000017b      0x513 src/simply/simply.c.41.o
-                                        0x786 (size before relaxing)
- .debug_str     0x000000000000068e      0x6e9 src/simply/simply_accel.c.41.o
-                                        0xa05 (size before relaxing)
- .debug_str     0x0000000000000d77     0x130f src/simply/simply_menu.c.41.o
-                                       0x1dcb (size before relaxing)
- .debug_str     0x0000000000002086      0x841 src/simply/simply_msg.c.41.o
-                                       0x145b (size before relaxing)
- .debug_str     0x00000000000028c7      0x2fd src/simply/simply_res.c.41.o
-                                        0x6c4 (size before relaxing)
- .debug_str     0x0000000000002bc4       0xee src/simply/simply_splash.c.41.o
-                                        0x3e7 (size before relaxing)
- .debug_str     0x0000000000002cb2      0xeb3 src/simply/simply_stage.c.41.o
-                                       0x1efe (size before relaxing)
- .debug_str     0x0000000000003b65      0x4c9 src/simply/simply_ui.c.41.o
-                                       0x167a (size before relaxing)
- .debug_str     0x000000000000402e      0x355 src/simply/simply_voice.c.41.o
-                                        0xab6 (size before relaxing)
- .debug_str     0x0000000000004383      0x272 src/simply/simply_wakeup.c.41.o
-                                        0x990 (size before relaxing)
- .debug_str     0x00000000000045f5      0x7ac src/simply/simply_window.c.41.o
-                                       0x15e7 (size before relaxing)
- .debug_str     0x0000000000004da1      0x19c src/simply/simply_window_stack.c.41.o
-                                        0xb6e (size before relaxing)
- .debug_str     0x0000000000004f3d      0x2e5 basalt/appinfo.auto.c.41.o
-                                        0x3cc (size before relaxing)
- .debug_str     0x0000000000005222       0x65 basalt/src/resource_ids.auto.c.41.o
-                                        0x119 (size before relaxing)
- .debug_str     0x0000000000005287       0xda /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
-                                        0x10b (size before relaxing)
- .debug_str     0x0000000000005361       0xc6 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
-                                        0x1d8 (size before relaxing)
- .debug_str     0x0000000000000000      0x1d9 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
-
-.debug_frame    0x0000000000000000     0x12c8
- .debug_frame   0x0000000000000000       0x28 src/main.c.41.o
- .debug_frame   0x0000000000000028       0x40 src/simply/simply.c.41.o
- .debug_frame   0x0000000000000068       0xd0 src/simply/simply_accel.c.41.o
- .debug_frame   0x0000000000000138      0x394 src/simply/simply_menu.c.41.o
- .debug_frame   0x00000000000004cc      0x178 src/simply/simply_msg.c.41.o
- .debug_frame   0x0000000000000644      0x1e8 src/simply/simply_res.c.41.o
- .debug_frame   0x000000000000082c       0x94 src/simply/simply_splash.c.41.o
- .debug_frame   0x00000000000008c0      0x2a8 src/simply/simply_stage.c.41.o
- .debug_frame   0x0000000000000b68      0x1b4 src/simply/simply_ui.c.41.o
- .debug_frame   0x0000000000000d1c       0xb0 src/simply/simply_voice.c.41.o
- .debug_frame   0x0000000000000dcc       0x7c src/simply/simply_wakeup.c.41.o
- .debug_frame   0x0000000000000e48      0x288 src/simply/simply_window.c.41.o
- .debug_frame   0x00000000000010d0      0x114 src/simply/simply_window_stack.c.41.o
- .debug_frame   0x00000000000011e4       0x54 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_frame   0x0000000000001238       0x38 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_frame   0x0000000000001270       0x38 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_frame   0x00000000000012a8       0x20 /root/pebble-dev/pebble-sdk-4.5-linux64/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)

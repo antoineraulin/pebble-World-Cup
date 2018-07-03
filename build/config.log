@@ -1,13 +1,13 @@
-# project  configured on Tue Jul  3 18:03:57 2018 by
+# project  configured on Tue Jul  3 20:11:04 2018 by
 # waf 1.7.11 (abi 98, python 2070cf0 on linux2)
 # using /root/.pebble-sdk/SDKs/current/sdk-core/pebble/waf configure
 #
 ----------------------------------------
 Setting top to
-/root/hello-pebblejs
+/root/hello-pebblejs/pebble-World-Cup
 ----------------------------------------
 Setting out to
-/root/hello-pebblejs/build
+/root/hello-pebblejs/pebble-World-Cup/build
 ----------------------------------------
 Checking for program webpack
 /root/.pebble-sdk/SDKs/current/node_modules/.bin/webpack

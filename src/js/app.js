@@ -1,11 +1,17 @@
 var UI = require('ui');
 var ajax = require('ajax');
 var Vector2 = require('vector2');
+var info = Pebble.getActiveWatchInfo(); // Returns watch info
+var platform = info.platform; // Returns a string of the platform name
+var isChalk = platform === 'chalk';
+var sWidth = isChalk ? 180 : 144;
+var headPositionY = isChalk ? 10 : 0;
+var score1PositionX = isChalk ? 40 : 25;
 
 
 var image = new UI.Image({
   position: new Vector2(0, 0),
-  size: new Vector2(144, 168),
+  size: new Vector2(sWidth, 168),
   image: 'images/cup.png'
 });
  
@@ -15,18 +21,18 @@ var main = new UI.Window({
 
 main.add(image);
 
+main.show();
 
-var screen = 0;
 
-var tData;
 
 function get(){
 
-  main.each(function(element) {
-    main.remove(element);
-  });
+  
 ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
   function(data) {
+    main.each(function(element) {
+      main.remove(element);
+    });
     console.log(data);
     tData = data;
     var results = data;
@@ -36,27 +42,27 @@ ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
         var r = results[i - 1];
         var StageName = r.stage_name;
         var text = new UI.Text({
-          size: new Vector2(144, 168),
+          size: new Vector2(sWidth, 168),
           text:StageName,
           textAlign:'center',
         color: 'black',
-        position: new Vector2(0, 0),
+        position: new Vector2(0,headPositionY),
           font:'GOTHIC_18_BOLD'
         });
         main.add(text);
         var team1 = r.home_team.code;
         var team2 = r.away_team.code;
         var text = new UI.Text({
-          size: new Vector2(144, 168),
+          size: new Vector2(sWidth, 168),
           text:team1,
           textAlign:'left',
         color: 'black',
-        position: new Vector2(25, 110),
+        position: new Vector2(score1PositionX, 110),
           font:'GOTHIC_24_BOLD'
         });
         main.add(text);
         var text = new UI.Text({
-          size: new Vector2(119, 168),
+          size: new Vector2((sWidth - score1PositionX), 168),
           text:team2,
           textAlign:'right',
         color: 'black',
@@ -69,16 +75,16 @@ ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
         var score2 = r.away_team.goals;
 
         var text = new UI.Text({
-          size: new Vector2(144, 168),
+          size: new Vector2(sWidth, 168),
           text:score1,
           textAlign:'left',
         color: 'black',
-        position: new Vector2(25, 60),
+        position: new Vector2(score1PositionX, 60),
           font:'SANS_50'
         });
         main.add(text);
         var text = new UI.Text({
-          size: new Vector2(119, 168),
+          size: new Vector2((sWidth - score1PositionX), 168),
           text:score2,
           textAlign:'right',
         color: 'black',
@@ -87,7 +93,7 @@ ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
         });
         main.add(text);
         var text = new UI.Text({
-          size: new Vector2(144, 168),
+          size: new Vector2(sWidth, 168),
           text:"-",
           textAlign:'center',
         color: 'black',
@@ -99,7 +105,7 @@ ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
         var time = r.time;
 
         var text = new UI.Text({
-          size: new Vector2(144, 168),
+          size: new Vector2(sWidth, 168),
           text:time,
           textAlign:'center',
         color: 'black',
@@ -107,8 +113,6 @@ ajax({ url: 'https://worldcup.sfg.io/matches/today', type: 'json' },
           font:'GOTHIC_24_BOLD'
         });
         main.add(text);
-
-        main.show();
         i = results.length;
       }
     }
