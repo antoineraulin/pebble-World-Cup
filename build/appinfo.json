@@ -1,0 +1,44 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk", 
+        "diorite", 
+        "emery"
+    ], 
+    "uuid": "133215f0-cf20-4c05-997b-3c9be5a64e5b", 
+    "messageKeys": {}, 
+    "companyName": "Araulin", 
+    "versionLabel": "0.4", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {}, 
+    "longName": "World Cup", 
+    "versionCode": 1, 
+    "shortName": "World Cup", 
+    "watchapp": {
+        "watchface": false
+    }, 
+    "resources": {
+        "media": [
+            {
+                "menuIcon": true, 
+                "type": "bitmap", 
+                "name": "IMAGE_MENU_ICON", 
+                "file": "images/menu_icon.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_CUP", 
+                "file": "images/cup.png"
+            }, 
+            {
+                "type": "font", 
+                "name": "SANS_50", 
+                "file": "fonts/OpenSans.ttf"
+            }
+        ]
+    }
+}
